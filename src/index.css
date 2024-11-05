@@ -1,13 +1,74 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif
+}
+.linearGradient{
+    background: linear-gradient(180deg, #fff 0%, #e1ffea22 60%);
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb{
+    background: #888;
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: #555;
+}
+@layer base{
+    .active_Link{
+        @apply text-secondary relative
+         flex-1 after:w-full after:h-[1px] after:bg-secondary after:absolute after:-bottom-3 after:right-0
+    }
+}
+.h1{
+    @apply text-[48px] leading-tight md:text-[72px]
+    md:leading-3 md-8 font-bold
+}
+.h2{
+    @apply text-[40px] leading-tight md:text-[55px]
+    md:leading-3 md-4 font-bold
+}
+.h3{
+    @apply text-[32px] leading-tight md:text-[36px]
+    md:leading-3 md-4 font-semibold
+}
+.h4{
+    @apply text-[24px] leading-tight md:text-[32px]
+    md:leading-3 md-4 font-bold
+}
+p{
+    @apply leading-[1.3px] leading-tight md:text-[15px]
+}
+@layer utilities{
+    .btn_white_rounded{
+        @apply medium-15 bordder border-white bg-white px-7 py-3 text-gray-100 rounded-full
+    }
+    .btn_white_hover{
+        @apply text-[14px] font-[500] border border-white bg-white px-7 py-3 text-gray-100 rounded-full hover:border-black hover:bg-black hover:text-white transition-all duration-300
+    }
+    .btn_light_rounded{
+        @apply medium-15 bordder border-slate-10 bg-primary px-7 py-3 text-gray-100 rounded-full
+    }
+    .btn_dark_rounded{
+        @apply medium-15 bordder border-green-90 bg-green-90 px-7 py-3 text-white transition-all hover:bg-black rounded-full
+    }
+    .btn_dark_outline{
+        @apply medium-15 bordder border-green-90 bg-white px-7 py-3 text-green-90 transition-all hover:bg-green-90 hover:text-white rounded-full
+    }
+    .btn_light_outline{
+        @apply medium-15 bordder border-green-100 bg-green-200 px-7 py-3 text-green-90 bg-transparent transition-all hover:bg-green-90 hover:text-white rounded-full
+    }
+    .btn_secondary_rounded{
+        @apply medium-15 bordder border-secondary bg-secondary px-7 py-3 text-white transition-all hover:bg-green-90 hover:text-white rounded-full
+    }
 }
