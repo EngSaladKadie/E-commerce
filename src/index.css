@@ -71,4 +71,125 @@ p{
     .btn_secondary_rounded{
         @apply medium-15 bordder border-secondary bg-secondary px-7 py-3 text-white transition-all hover:bg-green-90 hover:text-white rounded-full
     }
+    .max-container{
+        @apply max-auto max-w[1440px];
+    }
+    .padding-container{
+        @apply px-6 lg:px-20 3xl:px-0;
+    }
+    .max_padd_container{
+        @apply max-auto max-w[1440px] px-6 lg:px-20 3xl:px-0;
+    }
+    .flexCenter{
+        @apply flex justify-center items-center;
+    }
+    .flexbetween{
+        @apply flex items-center justify-between;
+    }
+    .flexstart{
+        @apply flex items-center justify-start;
+    }
+    .flexend{
+        @apply flex items-center justify-end;
+    }
+    .redular-64{
+        @apply text-[64px] font-[400px]leading-[120%];
+        
+    }
+    .redular-52{
+        @apply text-[52px] font-[400px]leading-[120%];
+    }
+    .redular-48{
+        @apply text-[48px] font-[400px]leading-[120%];
+    }
+    .redular-40{
+        @apply text-[40px] font-[400px]leading-[120%];
+    }
+    .redular-32{
+        @apply text-[32px] font-[400px];
+    }
+    .redular-28{
+        @apply text-[28px] font-[400px]
+    }
+    .redular-24{
+        @apply text-[24px] font-[400px];
+    }
+    .redular-20{
+        @apply text-[20px] font-[400px];
+    }
+    .redular-18{
+        @apply text-[18px] font-[400px];
+    }
+    .redular-16{
+        @apply text-[16px] font-[400px];
+    }
+    .redular-14{
+        @apply text-[14px] font-[400px];
+    }
+    .redular-12{
+        @apply text-[12px] font-[400px];
+    }
+    .medium-24{
+        @apply text-[24px] font-[600px];
+    }
+    .medium-22{
+        @apply text-[22px] font-[600px];
+    }
+    .medium-20{
+        @apply text-[20px] font-[600px];
+    }
+    .medium-18{
+        @apply text-[18px] font-[600px];
+    }
+    .medium-16{
+        @apply text-[16px] font-[600px];
+    }
+    .medium-15{
+        @apply text-[15px] font-[600px];
+    }
+    .medium-14{
+        @apply text-[14px] font-[600px];
+    }
+    .medium-12{
+        @apply text-[12px] font-[600px];    
+    }
+    .bold-58{
+        @apply text-[58px] font-[700px] leading-[120%];
+    }
+    .bold-64{
+        @apply text-[64px] font-[700px] leading-[120%];
+    }    
+    .bold-52{
+        @apply text-[52px] font-[700px] leading-[120%];
+    }   
+    .bold-48{
+        @apply text-[48px] font-[700px] leading-[120%];
+    }
+    .bold-40{
+        @apply text-[40px] font-[700px] leading-[120%];
+    }
+    .bold-32{
+        @apply text-[32px] font-[700px] leading-[120%];
+    }
+    .bold-28{
+        @apply text-[28px] font-[700px] leading-[120%];
+    }
+    .bold-24{
+        @apply text-[24px] font-[700px] leading-[120%];
+    }
+    .bold-20{
+        @apply text-[20px] font-[700px] leading-[120%];
+    }
+    .bold-18{
+        @apply text-[18px] font-[700px] leading-[120%];
+    }
+    .bold-16{
+        @apply text-[16px] font-[700px] leading-[120%];
+    }
+    .bold-14{
+        @apply text-[14px] font-[700px] leading-[120%];
+    }
+    .bold-12{
+        @apply text-[12px] font-[700px] leading-[120%];
+    }
 }
