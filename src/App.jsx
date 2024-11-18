@@ -1,9 +1,17 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Header from "./componds/Header";
+import Home from "./pages/Home";
 
 export default function App() {
   return(
-    <h1 className="text text-3xl font-bold underline">
-      hellow world are you
-    </h1>
+    <main className="bg-slate-400 text-tertiary ">
+      <BrowserRouter>
+       <Header />
+        <Routes>
+          <Route path="/" element={<Home/>}/>
+        </Routes>
+      </BrowserRouter>
+    </main>
   )
   
 }
